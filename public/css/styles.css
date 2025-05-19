@@ -41,7 +41,8 @@ nav {
 
 }
 
-.hero-img {
+.hero-img,
+.about-banner-img {
   width: 100%;
   height: auto;
 }
