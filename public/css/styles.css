@@ -1,3 +1,11 @@
+/* project color scheme */
+:root {
+  --color-primary: #254117;
+  --color-hover: #d97d54;
+  --color-highlights: #a3c9a8;
+  --color-border: #8b5e3c;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +18,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5em;
-    background-color: green;
+    background-color: var(--color-primary);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -133,7 +141,7 @@ nav {
       display: none;
       flex-direction: column;
       width: 100%;
-      background-color: green;
+      background-color: var(--color-primary);;
       padding: 1em;
       margin: 1em 0 0 0;
     }
