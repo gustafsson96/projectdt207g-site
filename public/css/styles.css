@@ -7,17 +7,23 @@ body {
 nav {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: 0.5em;
     background-color: green;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo img {
+  height: 50px;
+  margin-left: 1em;
+  padding: 0;
 }
 
 /* navbar link styling */
 #nav-links {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
+    margin: 0 2em 0 0;
     padding: 0;
     list-style: none;
     display: flex;
@@ -71,14 +77,21 @@ nav {
       flex-direction: column;
       align-items: flex-start;
     }
+
+    .nav-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
   
     #hamburger-menu {
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: relative;
-      align-self: flex-end;
       cursor: pointer;
+      margin-right: 1em;
     }
   
     #hamburger-menu .bar {
@@ -122,7 +135,7 @@ nav {
       width: 100%;
       background-color: green;
       padding: 1em;
-      margin-top: 1em;
+      margin: 1em 0 0 0;
     }
   
     #nav-links.active {
