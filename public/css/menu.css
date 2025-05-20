@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    margin: 1em 0 0.2em;
+}
+
+#menu-list {
+    margin: 0 auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.category-heading {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+    margin: 0.5em 0;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .menu-item {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+  }
+  
+  .menu-item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+  }
+  
+  .menu-item p {
+    margin: 3px 0;
+    color: #555;
+  }
