@@ -1,5 +1,6 @@
 /* project color scheme */
 :root {
+  --color-background: #FAF3E0;
   --color-primary: #254117;
   --color-hover: #d76a2e;
   --color-highlights: #a3c9a8;
@@ -7,6 +8,7 @@
 }
 
 body {
+  background-color: var(--color-background);
   margin: 0;
   padding: 0;
 }
@@ -132,6 +134,32 @@ nav {
 .btn-menu:focus {
   background-color: var(--color-hover);
 }
+
+/* start page info section */
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 3em 1em;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.info-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.info-text {
+  flex: 1 1 300px;
+  font-size: 1.3em;
+  color: var(--color-primary);
+}
+
 
 /* about.html */
 
