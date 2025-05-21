@@ -150,8 +150,7 @@ nav {
 
 .info-icon img {
   width: 100px;
-  height: 100px;
-  object-fit: contain;
+  height: auto;
 }
 
 .info-text {
@@ -322,6 +321,20 @@ nav {
   .hero-text p {
     font-size: 1.3em;
     padding-left: 0;
+  }
+
+  /* info section */
+  .info-section {
+    flex-direction: column;
+    padding: 3em 0.5em;
+  }
+
+  .pizza-icon {
+    display: none;
+  }
+
+  .info-text {
+    flex: none;
   }
 }
 
