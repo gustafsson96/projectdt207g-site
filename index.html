@@ -28,43 +28,56 @@
         </ul>
     </nav>
     <main>
+        <!-- Hero section -->
         <section class="hero-section">
-        <picture>
-            <!-- Small screen AVIF -->
-            <source srcset="images/hero-mobile.avif" media="(max-width: 768px)" type="image/avif">
-            <!-- Large screen AVIF -->
-            <source srcset="images/hero-desktop.avif" media="(min-width: 769px)" type="image/avif">
-            <!-- Fallback JPG -->
-            <img class="hero-img" src="images/hero-desktop.jpg" width="1920" height="1080" alt="Pizza slice">
-        </picture>
-        <div class="hero-text">
-            <h1>The Green Slice</h1>
-            <p>Fresh, Sustainable, Vegetarian Pizzas</p>
-            <a href="menu.html" class="btn btn-menu">See Our Menu</a>
-        </div>
-    </section>
-    <section class="info-section">
-        <div class="info-icon">
             <picture>
-                <source srcset="images/info-icon1.avif" type="image/avif">
-                <img src="images/info-icon1.png" alt="Basil icon" width="100">
-              </picture>
-          </div>
-      
-          <div class="info-text">
-            <p>
-              Welcome to The Green Slice — your go-to spot for delicious, sustainable vegetarian pizzas made with fresh, local ingredients.
-            </p>
-            <p><strong>Opening Hours:</strong> Mon-Sun 11am - 10pm</p>
-          </div>
-      
-          <div class="info-icon">
-            <picture>
-                <source srcset="images/info-icon2.avif" type="image/avif">
-                <img src="images/info-icon2.png" alt="Pizza icon" width="100">
-              </picture>
-          </div>
-    </section>
+                <!-- Small screen AVIF -->
+                <source srcset="images/hero-mobile.avif" media="(max-width: 768px)" type="image/avif">
+                <!-- Large screen AVIF -->
+                <source srcset="images/hero-desktop.avif" media="(min-width: 769px)" type="image/avif">
+                <!-- Fallback JPG -->
+                <img class="hero-img" src="images/hero-desktop.jpg" width="1920" height="1080" alt="Pizza slice">
+            </picture>
+            <div class="hero-text">
+                <h1>The Green Slice</h1>
+                <p>Fresh, Sustainable, Vegetarian Pizzas</p>
+                <a href="menu.html" class="btn btn-menu">See Our Menu</a>
+            </div>
+        </section>
+        <section class="info-section">
+            <div class="info-icon">
+                <picture>
+                    <source srcset="images/info-icon1.avif" type="image/avif">
+                    <img src="images/info-icon1.png" alt="Basil icon" width="100">
+                </picture>
+            </div>
+            <!-- Intro section with opening hours -->
+            <div class="info-text">
+                <p>
+                    Welcome to The Green Slice — your go-to spot for delicious, sustainable vegetarian pizzas made with
+                    fresh, local ingredients.
+                </p>
+                <p><strong>Opening Hours:</strong> Mon-Sun 11am - 10pm</p>
+            </div>
+
+            <div class="info-icon">
+                <picture>
+                    <source srcset="images/info-icon2.avif" type="image/avif">
+                    <img src="images/info-icon2.png" alt="Pizza icon" width="100">
+                </picture>
+            </div>
+        </section>
+        <!-- About us section -->
+        <section class="hp-about-preview">
+            <div class="hp-about-content">
+                <h2>About Us</h2>
+                <p>
+                    At The Green Slice, we’re passionate about serving delicious vegetarian pizza made with love,
+                    locally sourced ingredients, and a commitment to sustainability. Looking for something vegan or gluten free? We have plenty of options for you as well. 
+                </p>
+                <a href="about.html" class="btn">Read more</a>
+            </div>
+        </section>
     </main>
     <script src="js/main.js"></script>
 </body>
