@@ -235,6 +235,32 @@ nav {
   margin: 0;
 }
 
+.about-section {
+  max-width: 900px;
+  margin: 4em auto;
+  padding: 2em;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.about-section h2 {
+  font-size: 2.2em;
+  margin: 0 0 0.5em;
+}
+
+.about-section p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.divider-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 2em 0;
+  border-radius: 8px;
+}
+
 /* media query for screens smaller than 1200px */
 @media (max-width: 1200px) {
 
