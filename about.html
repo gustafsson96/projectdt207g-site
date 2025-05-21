@@ -25,14 +25,17 @@
             <li><a href="about.html">About Us</a></li>
         </ul>
     </nav>
+<!-- About hero banner -->
+<section class="about-hero">
     <picture>
-        <!-- Small screen AVIF -->
-        <source srcset="images/about-banner-mobile.avif" media="(max-width: 799px)" type="image/avif">
-        <!-- Large screen AVIF -->
-        <source srcset="images/about-banner-desktop.avif" media="(min-width: 800px)" type="image/avif">
-        <!-- Fallback JPG -->
-        <img class="about-banner-img" src="images/about-banner-desktop.jpg" width="1920" height ="1080" alt="Cutting board with tomatoes">
-      </picture>
+      <source srcset="images/about-banner-mobile.avif" media="(max-width: 768px)" type="image/avif">
+      <source srcset="images/about-banner-desktop.avif" media="(min-width: 769px)" type="image/avif">
+      <img class="about-hero-img" src="images/about-banner-desktop.png" width="1920" height="1080" alt="Cutting board with tomatoes">
+    </picture>
+    <div class="about-hero-text">
+      <h1>About Us</h1>
+    </div>
+  </section>
     <script src="js/main.js"></script>
 </body>
 </html>
