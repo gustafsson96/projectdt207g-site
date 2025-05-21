@@ -67,6 +67,15 @@
                 </picture>
             </div>
         </section>
+        <!-- Divider image -->
+        <picture>
+                            <!-- Small screen AVIF -->
+                            <source srcset="images/hp-divider-mobile.avif" media="(max-width: 768px)" type="image/avif">
+                <!-- Large screen AVIF -->
+                <source srcset="images/hp-divider.avif" media="(min-width: 769px)" type="image/avif">
+            <!-- Fallback PNG -->
+            <img class="hero-img" src="images/hp-divider.png" width="1920" height="550" alt="Pizza">
+        </picture>
         <!-- About us section -->
         <section class="hp-about-preview">
             <div class="hp-about-content">

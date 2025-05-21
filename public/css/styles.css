@@ -339,7 +339,11 @@ nav {
   }
   
   .btn {
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 0.6em 1em;
+  }
+
+  .hp-about-preview h2 {
+    font-size: 1.8em;
   }
 }
