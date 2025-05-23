@@ -58,3 +58,19 @@ button:hover {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+#form-feedback {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    min-height: 1.5em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+}
+
+/* media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    #form-feedback {
+        font-size: 1em;
+    }
+}

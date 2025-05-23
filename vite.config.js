@@ -5,7 +5,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: './index.html',
-        add: './menu.html',
+        menu: './menu.html',
+        reserve: './reserve.html', 
         about: './about.html' 
       }
     }
