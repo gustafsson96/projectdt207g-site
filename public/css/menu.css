@@ -1,34 +1,76 @@
 h1 {
-    text-align: center;
-    font-size: 3.5em;
-    margin: 1em 0 0.2em;
+  text-align: center;
+  font-size: 3.5em;
+  margin: 1em 0 0.2em;
 }
 
+.menu-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.menu-info-container p {
+  font-size: 1.1em;
+  font-style: italic;
+  margin: 0.5em;
+}
+
+.menu-info-container i {
+  color: var(--color-primary);
+}
+
+.menu-info-container button {
+  align-self: center;
+  padding: 0.5em 1em;
+  margin-top: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.menu-info-container button:hover {
+  background-color: var(--color-hover);
+}
+
+
 #menu-list {
-    margin: 0 auto;
-    padding: 1em;
-    width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  width: 80%;
 }
 
 .category-heading {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5em;
-    margin: 0.5em 0;
-    font-size: 2em;
-    color: #333;
-  }
-  
-  .menu-item {
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-  }
-  
-  .menu-item h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.2rem;
-  }
-  
-  .menu-item p {
-    margin: 3px 0;
-    color: #555;
-  }
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.5em;
+  margin: 0.5em 0;
+  font-size: 2em;
+  color: #333;
+}
+
+.menu-item {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+
+.menu-item h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.menu-item p {
+  margin: 3px 0;
+  color: #555;
+}
+
+.vegan-label i {
+  color: var(--color-primary);
+}
