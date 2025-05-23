@@ -16,6 +16,7 @@ The other parts of the project are:
 * Mobile-friendly hamburger menu for screens smaller than 768px.
 * Information about the company.
 * Filter menu on vegan options only.
+* Make a table reservation via a booking form.
 
 ## Technologies Used
 * HTML for basic structure
