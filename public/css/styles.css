@@ -25,6 +25,7 @@ main {
 }
 
 
+
 /* navbar styling */
 nav {
   position: relative;
@@ -61,12 +62,12 @@ nav {
 }
 
 #nav-links li a:hover {
-  color: yellow;
+  color: var(--color-hover);
 }
 
 #nav-links li a.active {
-  color: yellow;
-
+  color: var(--color-hover);
+  font-weight: bold;
 }
 
 /* hamburger icon styling */
