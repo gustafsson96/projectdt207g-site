@@ -26,8 +26,6 @@ main {
   flex: 1;
 }
 
-
-
 /* navbar styling */
 nav {
   position: relative;
@@ -91,6 +89,13 @@ nav {
 
 /* index.html */
 
+.hp-about-preview h2,
+.info-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+  color: var(--color-primary);
+}
+
 /* hero section */
 .hero-section {
   position: relative;
@@ -125,7 +130,7 @@ nav {
 .hero-text p {
   font-size: 1.2em;
   margin-bottom: 1.5em;
-  padding-left: 0.2em;
+  padding-left: 0.4em;
 }
 
 .btn {
@@ -153,25 +158,23 @@ nav {
 /* home page info section */
 .info-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1em;
   padding: 3em 1em;
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
   flex-wrap: wrap;
 }
 
-.info-icon img {
-  width: 100px;
-  height: auto;
-}
-
-.info-text {
-  flex: 1 1 300px;
-  font-size: 1.3em;
-  color: var(--color-primary);
+.hours-box {
+  background-color:#fff;
+  padding: 1.5em;
+  margin: 0.5em 0 2em;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 1.2em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* home page about section */
@@ -186,12 +189,6 @@ nav {
 .hp-about-content {
   max-width: 800px;
   color: #2d2d2d;
-}
-
-.hp-about-preview h2 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
-  color: var(--color-primary);
 }
 
 .hp-about-preview p {
@@ -254,7 +251,6 @@ nav {
   max-width: 900px;
   margin: 4em auto;
   padding: 2em;
-  text-align: center;
   color: var(--color-primary);
 }
 
@@ -324,7 +320,7 @@ nav {
   }
 
   .hero-text h1 {
-    font-size: 2.8em;
+    font-size: 3em;
   }
 
   .hero-text p {
@@ -426,22 +422,13 @@ nav {
   }
 
   .hero-text p {
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding-left: 0;
   }
 
   /* info section */
   .info-section {
-    flex-direction: column;
     padding: 3em 0.5em;
-  }
-
-  .basil-icon-2 {
-    display: none;
-  }
-
-  .info-text {
-    flex: none;
   }
 
   /* about.html */
@@ -469,11 +456,11 @@ nav {
   /* index.html */
 
   .hero-text h1 {
-    font-size: 2em;
+    font-size: 2.4em;
   }
 
   .hero-text p {
-    font-size: 1.1em;
+    font-size: 1em;
   }
   
   .btn {
@@ -481,7 +468,12 @@ nav {
     padding: 0.6em 1em;
   }
 
-  .hp-about-preview h2 {
+  .hp-about-preview h2,
+  .info-section h2 {
     font-size: 1.8em;
+  }
+
+  .hours-box {
+    font-size: 1em;
   }
 }
