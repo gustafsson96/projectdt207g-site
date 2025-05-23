@@ -2,9 +2,17 @@ const bookingForm = document.getElementById("booking-form");
 
 // Form feedback
 function formFeedback(message, isError = false) {
-    const feedbackElement = document.getElementById("form-feedback");
-    feedbackElement.textContent = message;
-    feedbackElement.style.color = isError ? "red" : "green";
+    const feedback = document.getElementById("form-feedback");
+    feedback.textContent = message;
+    feedback.style.color = isError ? "red" : "green";
+
+    if (feedback.timeoutId) {
+        clearTimeout(feedback.timeoutId);
+    }
+
+    feedback.timeoutId = setTimeout(() => {
+        feedback.textContent = "";
+    }, 5000);
 }
 
 // Create a new reservation
@@ -13,7 +21,7 @@ function createReservation(e) {
 
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const partySize = document.getElementById("partySize").value;
+    const partySize = document.getElementById("party-size").value;
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
     const specialRequest = document.getElementById("specialRequest").value;
