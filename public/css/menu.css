@@ -1,7 +1,8 @@
 h1 {
+  color: var(--color-primary);
   text-align: center;
-  font-size: 3.5em;
-  margin: 1em 0 0.2em;
+  font-size: 4em;
+  margin: 1em 0 0;
 }
 
 .menu-info-container {
@@ -73,4 +74,17 @@ h1 {
 
 .vegan-label i {
   color: var(--color-primary);
+}
+
+/* media query for screens smaller than 768px */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 3em;
+    margin-bottom: 0.2em;
+  }
+
+  .menu-info-container p {
+    font-size: 0.9em;
+  }
 }
