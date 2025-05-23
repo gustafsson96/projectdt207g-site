@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,94 +9,101 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reservation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+
     <body>
         <div class="page-container">
-          <nav>
-            <div class="nav-top">
-              <a href="index.html">
-                <img src="images/logotype.svg" alt="The Green Slice logotype" width="200" height="auto">
-              </a>
-              <div id="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-            </div>
-            <ul id="nav-links">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="menu.html">Menu</a></li>
-              <li><a href="reservation.html" class="active">Book Table</a></li>
-              <li><a href="about.html">About Us</a></li>
-            </ul>
-          </nav>
-          <main>
-            <div class="booking-container">
-                <h1>Book a Table</h1>
-                <p>For groups larger than 8, please <a href="mailto:jugu2402@student.miun.se">contact us directly</a> to arrange your booking. </p>
-                <form id="bookingForm">
-                  <label for="name">Name *</label>
-                  <input type="text" id="name" name="name" />
-            
-                  <label for="email">Email *</label>
-                  <input type="email" id="email" name="email" />
-            
-                  <label for="partySize">Party Size *</label>
-                  <select id="partySize" name="partySize">
-                    <option value="" disabled selected>Select party size</option>
-                    <option value="1">1 person</option>
-                    <option value="2">2 people</option>
-                    <option value="3">3 people</option>
-                    <option value="4">4 people</option>
-                    <option value="5">5 people</option>
-                    <option value="6">6 people</option>
-                    <option value="7">7 people</option>
-                    <option value="8">8 people</option>
-                  </select>
-            
-                  <label for="date">Date *</label>
-                  <input type="date" id="date" name="date" min="" />
-                  
-                  <label for="time">Time *</label>
-                  <select id="time" name="time">
-                    <option value="" disabled selected>Select time</option>
-                    <!-- Time slots created dynamically -->
-                  </select>
-            
-                  <label for="specialRequest">Special Requests</label>
-                  <textarea id="specialRequest" name="specialRequest" rows="3" placeholder="Dietary restrictions or requests"></textarea>
-            
-                  <button type="submit">Book Now</button>
-                  <p id="formMessage" class="success-message"></p>
-                </form>
-              </div>
-          </main>
-          <footer class="site-footer">
-            <div class="footer-content">
-              <div class="footer-section contact-info">
-                <p>123 Green Street, Leaf City</p>
-                <p><a href="mailto:jugu2402@student.miun.se">info@greenslice.com</a></p>
-              </div>
-              <div class="footer-section social-icons">
-                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-                  <i class="fab fa-facebook-square"></i>
-                </a>
-                <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </div>
-              <div class="footer-section copyright">
-                <p>&copy; 2025 Julia Gustafsson</p>
-              </div>
-            </div>
-          </footer>
+            <nav>
+                <div class="nav-top">
+                    <a href="index.html">
+                        <img src="images/logotype.svg" alt="The Green Slice logotype" width="200" height="auto">
+                    </a>
+                    <div id="hamburger-menu">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <ul id="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="reservation.html" class="active">Book Table</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <main>
+                <div class="booking-container">
+                    <h1>Book a Table</h1>
+                    <p>For groups larger than 8, please <a href="mailto:jugu2402@student.miun.se">contact us
+                            directly</a> to arrange your booking. </p>
+                    <form id="booking-form">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" />
+
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" />
+
+                        <label for="party-size">Party Size *</label>
+                        <select id="party-size" name="party-size">
+                            <option value="" disabled selected>Select party size</option>
+                            <option value="1">1 person</option>
+                            <option value="2">2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                            <option value="6">6 people</option>
+                            <option value="7">7 people</option>
+                            <option value="8">8 people</option>
+                        </select>
+
+                        <label for="date">Date *</label>
+                        <input type="date" id="date" name="date" min="" />
+
+                        <label for="time">Time *</label>
+                        <select id="time" name="time">
+                            <option value="" disabled selected>Select time</option>
+                            <!-- Time slots created in js -->
+                        </select>
+
+                        <label for="specialRequest">Special Requests</label>
+                        <textarea id="specialRequest" name="specialRequest" rows="3"
+                            placeholder="Dietary restrictions or requests"></textarea>
+
+                        <button type="submit">Book Now</button>
+                        <div id="form-feedback"></div>
+                    </form>
+                </div>
+            </main>
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <div class="footer-section contact-info">
+                        <p>123 Green Street, Leaf City</p>
+                        <p><a href="mailto:jugu2402@student.miun.se">info@greenslice.com</a></p>
+                    </div>
+                    <div class="footer-section social-icons">
+                        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="footer-section copyright">
+                        <p>&copy; 2025 Julia Gustafsson</p>
+                    </div>
+                </div>
+            </footer>
         </div>
         <script src="js/main.js"></script>
         <script src="js/reservation.js"></script>
-      </body>
-      
-      </html>
+    </body>
+
+</html>
 </body>
+
 </html>
