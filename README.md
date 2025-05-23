@@ -15,6 +15,7 @@ The other parts of the project are:
 * Dynamic fetching and displaying of menu items from backend API.
 * Mobile-friendly hamburger menu for screens smaller than 768px.
 * Information about the company.
+* Filter menu on vegan options only.
 
 ## Technologies Used
 * HTML for basic structure
