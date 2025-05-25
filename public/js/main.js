@@ -1,5 +1,6 @@
 "use strict";
 
+/* Function to toggle menu (original/hamburger style) */
 function toggleMenu() {
     const navLinks = document.querySelector('#nav-links');
     const hamburgerMenu = document.querySelector('#hamburger-menu');

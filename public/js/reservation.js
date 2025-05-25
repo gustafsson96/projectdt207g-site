@@ -1,21 +1,26 @@
+"use strict";
+
+// Get booking form
 const bookingForm = document.getElementById("booking-form");
 
-// Form feedback
+// Function to display user feedback
 function formFeedback(message, isError = false) {
     const feedback = document.getElementById("form-feedback");
     feedback.textContent = message;
     feedback.style.color = isError ? "red" : "green";
 
+    // Ensure previous timeouts are cleared
     if (feedback.timeoutId) {
         clearTimeout(feedback.timeoutId);
     }
 
+    // Automatically clear message after 5 seconds
     feedback.timeoutId = setTimeout(() => {
         feedback.textContent = "";
     }, 5000);
 }
 
-// Frontend form validation 
+// Function to validate reservation form in frontend
 function validateForm() {
     const name = document.getElementById("name").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -23,6 +28,7 @@ function validateForm() {
     const date = document.getElementById("date").value;
     const time = document.getElementById("time").value;
 
+    /* Required field checks */
     if (!name) {
         formFeedback("Please enter your name.", true);
         return false;
@@ -44,12 +50,11 @@ function validateForm() {
         return false;
     }
 
-    // Check if date/time is in the future
+    // Check if date and time is in the future
     const now = new Date();
-    const selectedDate = new Date(date);
     const selectedDateTime = new Date(`${date}T${time}`);
 
-    // Compare only date parts (year, month, day)
+    // Only allow future dates (including today's date)
     const todayStr = now.toISOString().split("T")[0];
     const selectedDateStr = date;
 
@@ -68,10 +73,11 @@ function validateForm() {
 }
 
 
-// Create a new reservation
+// Function to create a new reservation
 function createReservation(e) {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
 
+    // Run validation 
     if (!validateForm()) {
         return;
     }
@@ -83,8 +89,10 @@ function createReservation(e) {
     const time = document.getElementById("time").value;
     const specialRequest = document.getElementById("specialRequest").value.trim();
 
+    // Combine date and time into a single Date object
     const dateTime = new Date(`${date}T${time}`);
 
+    // Format data to match API structure
     const reservationData = {
         name,
         email,
@@ -93,6 +101,7 @@ function createReservation(e) {
         specialRequest
     };
 
+    // Send the POST request to the API
     fetch("https://projectdt207g-api.onrender.com/reservation", {
         method: "POST",
         headers: {
@@ -106,6 +115,8 @@ function createReservation(e) {
                 formFeedback(result.message || "Failed to make reservation.", true);
                 return;
             }
+
+            // Success message and reset form 
             formFeedback(result.message || "Reservation successful!", false);
             e.target.reset();
         })
@@ -115,5 +126,5 @@ function createReservation(e) {
         });
 }
 
-// Attach the event listener
+// Attach form submit handler
 bookingForm.addEventListener("submit", createReservation);
