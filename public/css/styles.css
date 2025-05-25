@@ -1,4 +1,4 @@
-/* project color scheme */
+/* Project color scheme (adjusted from moodboard) */
 :root {
   --color-background: #FAF3E0;
   --color-primary: #254117;
@@ -8,6 +8,7 @@
   --font-heading: 'Caveat', 'Segoe Script', 'Comic Sans MS', cursive;
 }
 
+/* General body styling */
 body {
   background-color: var(--color-background);
   margin: 0;
@@ -16,6 +17,7 @@ body {
   font-family: "Montserrat", Georgia, 'Times New Roman', Times, serif;
 }
 
+/* Ensure footer stays at bottom of page */
 .page-container {
   display: flex;
   flex-direction: column;
@@ -26,7 +28,7 @@ main {
   flex: 1;
 }
 
-/* navbar styling */
+/* Navbar styling */
 nav {
   position: relative;
   display: flex;
@@ -37,13 +39,14 @@ nav {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Logotype */
 .nav-top img {
   height: 50px;
   margin-left: 0.5em;
   padding: 0;
 }
 
-/* navbar link styling */
+/* Navbar items */
 #nav-links {
   margin: 0 2em 0 0;
   padding: 0;
@@ -69,7 +72,7 @@ nav {
   font-weight: bold;
 }
 
-/* hamburger icon styling */
+/* Hamburger icon styling */
 #hamburger-menu {
   display: none;
   flex-direction: column;
@@ -96,7 +99,7 @@ nav {
   color: var(--color-primary);
 }
 
-/* hero section */
+/* Startpage hero section */
 .hero-section {
   position: relative;
   text-align: center;
@@ -155,7 +158,7 @@ nav {
   background-color: var(--color-hover);
 }
 
-/* home page info section */
+/* Home page info section with opening hours */
 .info-section {
   display: flex;
   flex-direction: column;
@@ -177,7 +180,7 @@ nav {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* home page about section */
+/* Home page about section */
 .hp-about-preview {
   background-color: var(--color-highlight);
   padding: 4em 2em;
@@ -214,6 +217,8 @@ nav {
 
 
 /* about.html */
+
+/* About us hero section */
 .about-hero {
   position: relative;
   text-align: center;
@@ -247,6 +252,7 @@ nav {
   margin: 0;
 }
 
+/* Section styling for about us information */
 .about-section {
   max-width: 900px;
   margin: 4em auto;
@@ -264,6 +270,7 @@ nav {
   line-height: 1.6;
 }
 
+/* Divider image */
 .divider-image img {
   width: 100%;
   height: auto;
@@ -272,7 +279,7 @@ nav {
   border-radius: 8px;
 }
 
-/* footer styling */
+/* Footer styling */
 .site-footer {
   background-color: var(--color-primary);
   color: white;
@@ -311,7 +318,7 @@ nav {
   font-size: 1.1em;
 }
 
-/* media query for screens smaller than 1200px */
+/* Media query for screens smaller than 1200px */
 @media (max-width: 1200px) {
 
   /* index.html */
@@ -329,7 +336,7 @@ nav {
   }
 }
 
-/* media query for screens smaller than 768px */
+/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -343,6 +350,7 @@ nav {
     width: 100%;
   }
 
+  /* Display hamburger menu */
   #hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -403,7 +411,6 @@ nav {
 
   /* index.html */
 
-  /* hero section */
   .hero-text {
     top: 50%;
     left: 50%;
@@ -426,12 +433,12 @@ nav {
     padding-left: 0;
   }
 
-  /* info section */
   .info-section {
     padding: 3em 0.5em;
   }
 
   /* about.html */
+
   .about-hero-text {
     top: 50%;
     max-width: 95%;
@@ -441,7 +448,7 @@ nav {
     font-size: 2.8em;
   }
 
-  /* footer */
+  /* Footer */
   .footer-content {
     flex-direction: column;
     text-align: center;
@@ -450,7 +457,7 @@ nav {
   }
 }
 
-/* media query for screens smaller than 620px */
+/* Media query for screens smaller than 620px */
 @media (max-width: 620px) {
   
   /* index.html */
