@@ -2,6 +2,7 @@
 
 // Get booking form
 const bookingForm = document.getElementById("booking-form");
+const bookingContainer = document.getElementById("booking-container");
 
 // Function to display user feedback
 function formFeedback(message, isError = false) {
@@ -116,9 +117,19 @@ function createReservation(e) {
                 return;
             }
 
-            // Success message and reset form 
-            formFeedback(result.message || "Reservation successful!", false);
-            e.target.reset();
+            // On success, replace form with booking confirmation
+            bookingContainer.innerHTML = `
+            <h2>Thank you, ${name}!</h2>
+            <div class="booking-confirmation">
+            <p>We look forward to welcoming you at The Green Slice.</p>
+            <p><b>Booking confirmation:</b></p>
+            <p>Date: ${date}</p>
+            <p>Time: ${time}</p>
+            <p>Number of Guests: ${partySize}</p>
+            <p>Special Requests: ${specialRequest ? specialRequest : "None"}</p>
+            <button class="btn" onclick="window.location.href='index.html'">Home</button>
+            </div>
+        `;
         })
         .catch((err) => {
             console.error("Add item error:", err);
