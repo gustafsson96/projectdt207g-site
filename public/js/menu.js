@@ -75,8 +75,13 @@ function displayMenuItems(menuItemArray) {
 
       /* Ingredients list */
       const ingredients = document.createElement("p");
-      ingredients.textContent = `Ingredients: ${item.ingredients.join(", ")}`;
-      
+      if (category.toLowerCase() === "other drinks") {
+        ingredients.textContent = `${item.ingredients.join(", ")}`;
+      } else {
+        ingredients.textContent = `Ingredients: ${item.ingredients.join(", ")}`;
+      }
+
+
       /* Price */
       const price = document.createElement("p");
       price.textContent = `Price: $${item.price.toFixed(2)}`;
