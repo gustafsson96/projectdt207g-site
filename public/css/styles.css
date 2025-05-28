@@ -455,7 +455,11 @@ nav {
   }
 
   .about-hero-text h1 {
-    font-size: 2.8em;
+    font-size: 3em;
+  }
+
+  .about-section {
+    margin: 2em auto;
   }
 
   .about-section h2 {
