@@ -3,7 +3,6 @@
 // Get booking form
 const bookingForm = document.getElementById("booking-form");
 const bookingContainer = document.getElementById("booking-container");
-// Test select functinality DELETE?
 const dateInput = document.getElementById("date");
 const timeSelect = document.getElementById("time");
 
