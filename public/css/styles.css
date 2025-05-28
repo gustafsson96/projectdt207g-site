@@ -327,12 +327,17 @@ nav {
   }
 
   .hero-text h1 {
-    font-size: 3em;
+    font-size: 3.4em;
   }
 
   .hero-text p {
     font-size: 1.1rem;
     padding-left: 0;
+  }
+
+  .hp-about-preview h2,
+  .info-section h2 {
+    font-size: 2em;
   }
 }
 
@@ -431,10 +436,15 @@ nav {
   .hero-text p {
     font-size: 1.2em;
     padding-left: 0;
+    font-weight: 600;
   }
 
   .info-section {
     padding: 3em 0.5em;
+  }
+
+  .hp-about-preview p {
+    text-align: left;
   }
 
   /* about.html */
@@ -453,7 +463,10 @@ nav {
     flex-direction: column;
     text-align: center;
     justify-content: center;
+  }
 
+  .footer-content p {
+    font-size: 1em;
   }
 }
 
@@ -477,10 +490,14 @@ nav {
 
   .hp-about-preview h2,
   .info-section h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
 
-  .hours-box {
+  .hp-about-preview p {
     font-size: 1em;
+  }
+
+  .hours-box  {
+    font-size: 0.9em;
   }
 }
