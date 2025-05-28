@@ -3,6 +3,9 @@
 // Get booking form
 const bookingForm = document.getElementById("booking-form");
 const bookingContainer = document.getElementById("booking-container");
+// Test select functinality DELETE?
+const dateInput = document.getElementById("date");
+const timeSelect = document.getElementById("time");
 
 // Function to display user feedback
 function formFeedback(message, isError = false) {
@@ -57,15 +60,14 @@ function validateForm() {
 
     // Only allow future dates (including today's date)
     const todayStr = now.toISOString().split("T")[0];
-    const selectedDateStr = date;
 
-    if (selectedDateStr < todayStr) {
+    if (date < todayStr) {
         formFeedback("Please select today or a future date.", true);
         return false;
     }
 
     // If date is today, check time
-    if (selectedDateStr === todayStr && selectedDateTime <= now) {
+    if (date === todayStr && selectedDateTime <= now) {
         formFeedback("Please select a time later than now.", true);
         return false;
     }
@@ -137,5 +139,41 @@ function createReservation(e) {
         });
 }
 
+// Filter time options based on selected date
+function updateTimeOptions() {
+    const selectedDate = new Date(dateInput.value);
+    const today = new Date();
+
+    Array.from(timeSelect.options).forEach(option => {
+        option.disabled = false;
+        option.hidden = false;
+    })
+
+    const isToday = selectedDate.toDateString() === today.toDateString();
+
+    if (isToday) {
+        Array.from(timeSelect.options).forEach(option => {
+            const timeValue = option.value;
+            if (!timeValue) return;
+
+            // Parse hours and minutes from the value
+            const [hours, minutes] = timeValue.split(":").map(Number);
+
+            const fullDateTime = new Date(`${dateInput.value}T${timeValue}`);
+            fullDateTime.setHours(hours, minutes, 0, 0);
+            
+            if (fullDateTime <= today) {
+                option.disabled = true;
+                option.hidden = true;
+            }
+        });
+
+        if (timeSelect.value && timeSelect.options[timeSelect.selectedIndex].disabled) {
+            timeSelect.value = "";
+        }
+    }
+}
+
 // Attach form submit handler
 bookingForm.addEventListener("submit", createReservation);
+dateInput.addEventListener("change", updateTimeOptions);
