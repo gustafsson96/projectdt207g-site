@@ -4,7 +4,7 @@
 
 This website is part of the final project for the course Backend-baserad webbutveckling, dt207g, at Mittuniversitet, Sundsvall. It serves as the frontend website for the fictional restaurant *The Green Slice*, welcoming users and showcasing the restaurant’s menu, story, and philosophy. The menu data is fetched dynamically from the backend API, ensuring that it is always up-to-date.
 <br><br>
-Link to the live website: **[The Green Slice](https://dt207gprojectjg.netlify.app)**
+Link to the live website: **[The Green Slice](https://thegreenslice.netlify.app)**
 <br><br>
 The other parts of the project are:
 * Frontend admin page: [Admin page repository](https://github.com/gustafsson96/projectdt207g-admin.git)
