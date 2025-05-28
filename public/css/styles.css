@@ -458,6 +458,14 @@ nav {
     font-size: 2.8em;
   }
 
+  .about-section h2 {
+    font-size: 1.6em;
+  }
+
+  .about-section p {
+    font-size: 1.05em;
+  }
+
   /* Footer */
   .footer-content {
     flex-direction: column;
