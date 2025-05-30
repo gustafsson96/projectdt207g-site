@@ -17,6 +17,7 @@ The other parts of the project are:
 * Information about the company.
 * Filter menu on vegan options only.
 * Make a table reservation via a booking form.
+* Booking confirmation on successful reservation.
 
 ## Technologies Used
 * HTML for basic structure
